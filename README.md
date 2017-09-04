@@ -10,7 +10,5 @@
 | ------  |:--------:|:----------:|:--------:|
 | dataset |   34799  |     4410   |   12630  |
 
-
-![](./pictures/numClasses.png)
-
-
+<img src="./pictures/numClasses.png" alt="alt text" width="400" height="300">
+<img src="./pictures/traffic_signs_original.png" alt="alt text" width="400" height="800">
