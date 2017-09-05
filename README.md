@@ -10,9 +10,7 @@
 | ------------ |:--------:|:----------:|:--------:|
 | dataset size |   34799  |     4410   |   12630  |
 
-The distribution of class labels indicates that the training sample is not balanced,
-
-labels like 'End of No Passing', 'Dangerous curve to the left' etc. are less than 250.
+The distribution of class labels indicates that the training sample is not balanced, labels like 'End of No Passing', 'Dangerous curve to the left' etc. are less than 250.
 
 <img src="./pictures/numClasses.png" alt="alt text" width="400" height="300">
 
