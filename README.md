@@ -62,5 +62,7 @@ The following plots show the loss function and accurracy of training set and val
 Valid loss: 0.02809283, accuracy = 0.99%
 Test loss: 0.09074351, accuracy = 0.98%
 ```
-<img src="./pictures/false_predict_images.png" alt="alt text" width="500" height="250">
+The following plots show some false predictions 
+<img src="./pictures/false_predict_images.png" alt="alt text" width="550" height="300">
+
 #### Test a Model on New Images
