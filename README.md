@@ -48,7 +48,10 @@ I use 4 convoluted layers, with filters 64, 128, 256 and 512, and each of which 
 |  full connect | 43         |             |         |                  |
 
 #### Model Training
-Loss function = $alpha$
-<img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " /> 
+The prediction is transformed into a probability distribution using softmax:
 
+`softmax_i = exp(y_i) / sum (exp_i) `
+ 
+The cross entropy between the predicted probability distribution (y’) and the actual vector score probability distribution (y) is
+`cross entropy = - sum_i (y'_i x log(softmax_i))
 
