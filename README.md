@@ -36,6 +36,8 @@ ImageDataGenerator of keras is used to generate batches of augmented tensor imag
 
 #### Model Architecture
 
+I use 4 convoluted layers, with filters 64, 128, 256 and 512, and each of which is followed by maximum pooling with keep probability of 0.7.
+
 |              | input size  | kernel size | filters | keep probability |
 | ------------ |:-----------:|:-----------:|:-------:|:----------------:|
 |    conv2D    | 32 x 32 x 1 |    5 x 5    |    64   |      0.7         |
@@ -43,8 +45,18 @@ ImageDataGenerator of keras is used to generate batches of augmented tensor imag
 |    conv2D    | 3 x 3 x 128 |    3 x 3    |   256   |      0.7         |
 |    conv2D    | 3 x 3 x 256 |    3 x 3    |   512   |      0.7         |
 |  full connect | flatten    |             |         |      0.7         |
-|  full connect | 256        |             |         |       0.7        |
-|  full connect | 128        |             |         |       0.5        |
+|  full connect | 256        |             |         |      0.7         |
+|  full connect | 128        |             |         |      0.5         |
 |  full connect | 43         |             |         |                  |
+
+#### Model Training
+To train the model, I used an AdamOptimizer with the following parameters.
+
+batch size = 512
+learning rate = 0.0005
+early_stopping_patience = 30
+l2_lambda = 0.0001 
+
+dropout was used in the convolution layers and full connected layers to prevent overfitting. The dropout ratio is shown in the NN architecture above. Early stopping is employed to stop the training process when the loss on validation set stopped improving in the last 30 epochs. The traniing progress is shown in the plot below.
 
 
