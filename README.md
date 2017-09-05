@@ -57,8 +57,11 @@ The cross entropy between the predicted probability distribution (y’) and the 
 
 I minimize the cross entropy using AdamOptimizer with the following parameters
 `batch size = 512
+
 learning rate = 0.0005
+
 epoch = 100
+
 earlying stopping patience = 30
 `
-
+<img src="./pictures/loss_accuracy.png" alt="alt text" width="500" height="250">
