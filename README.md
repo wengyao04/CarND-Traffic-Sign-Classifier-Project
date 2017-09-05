@@ -57,18 +57,14 @@ I minimize the cross entropy using AdamOptimizer with the following parameters
 
 ``` 
 batch size = 512
-
 learning rate = 0.0005
-
 epoch = 100
-
 earlying stopping patience = 30
 ```
 The following plots show the loss function and accurracy of training set and valuation set. 
 <img src="./pictures/loss_accuracy.png" alt="alt text" width="650" height="300">
 ```
 Valid loss: 0.02809283, accuracy = 0.99%
-
 Test loss: 0.09074351, accuracy = 0.98%
 ```
 #### Test a Model on New Images
