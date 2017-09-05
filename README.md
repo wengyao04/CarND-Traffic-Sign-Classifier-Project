@@ -33,3 +33,18 @@ ImageDataGenerator of keras is used to generate batches of augmented tensor imag
  - randomly zoomed with a factor ranging from 0.8 to 1.2
  - randomly sheared within +/- 0.5 rad
 <img src="./pictures/augumented_images.png" alt="alt text" width="500" height="250">
+
+#### Model Architecture
+
+|              | input size  | kernel size | filters | keep probability |
+| ------------ |:-----------:|:-----------:|:-------:|:----------------:|
+|    conv2D    | 32 x 32 x 1 |    5 x 5    |    64   |      0.7         |
+|    conv2D    | 5 x 5 x 64  |    3 x 3    |   128   |      0.7         |
+|    conv2D    | 3 x 3 x 128 |    3 x 3    |   256   |      0.7         |
+|    conv2D    | 3 x 3 x 256 |    3 x 3    |   512   |      0.7         |
+|  full connect | flatten    |             |         |      0.7         |
+|  full connect | 256        |             |         |       0.7        |
+|  full connect | 128        |             |         |       0.5        |
+|  full connect | 43         |             |         |                  |
+
+
