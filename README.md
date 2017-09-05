@@ -32,7 +32,7 @@ ImageDataGenerator of keras is used to generate batches of augmented tensor imag
 
 #### Model Architecture
 
-I use 4 convoluted layers, with filters 64, 128, 256 and 512, and each of which is followed by a maximum pooling with keep probability of 0.7.
+I use 4 convoluted layers with 64, 128, 256 and 512 filters respectively, and each of which is followed by a maximum pooling with keep probability of 0.7. I do not use any regularization in the begining, it is very easy to overfit the model during traning, the accuracy of traning is very easy to reach 99% but the accuracy of validation is still around 80% - 90%. Then I add drop out for each layer to avoid overfitting.
 
 |              | input size  | kernel size | filters | keep probability |
 | ------------ |:-----------:|:-----------:|:-------:|:----------------:|
@@ -53,13 +53,14 @@ The prediction is transformed into a probability distribution using softmax:
 The cross entropy between the predicted probability distribution (y’) and the actual vector score probability distribution (y) is
 `cross entropy = - sum (y'_i * log(softmax_i))`
 
-I minimize the cross entropy using AdamOptimizer with the following parameters
+I minimize the cross entropy using AdamOptimizer with the following parameters, L2 regularization is addded which improve the accuracy by 0.5%.
 
 ``` 
 batch size = 512
 learning rate = 0.0005
 epoch = 100
 earlying stopping patience = 30
+L2 lambda = 0.0001 
 ```
 The following plots show the loss function and accurracy of training set and valuation set. 
 <img src="./pictures/loss_accuracy.png" alt="alt text" width="650" height="300">
