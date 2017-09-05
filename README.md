@@ -53,5 +53,12 @@ The prediction is transformed into a probability distribution using softmax:
 `softmax_i = exp(y_i) / sum (exp_i) `
  
 The cross entropy between the predicted probability distribution (y’) and the actual vector score probability distribution (y) is
-`cross entropy = - sum_i (y'_i x log(softmax_i))
+`cross entropy = - sum (y'_i * log(softmax_i))`
+
+I minimize the cross entropy using AdamOptimizer with the following parameters
+`batch size = 512
+learning rate = 0.0005
+epoch = 100
+earlying stopping patience = 30
+`
 
