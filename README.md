@@ -11,6 +11,7 @@
 | dataset size |   34799  |     4410   |   12630  |
 
 Distribution of classes indicates that the training sample is not balanced, classes like 'End of No Passing', 'Dangerous curve to the left' etc. are very few, which are less than 250. I also show images of traffic sign for each classes, and find that the contrast and exposure of some images are very low. 
+
 <img src="./pictures/numClasses.png" alt="alt text" width="400" height="300">
 <img src="./pictures/traffic_signs_original.png" alt="alt text" width="750" height="950">
 
