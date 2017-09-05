@@ -10,19 +10,16 @@
 | ------------ |:--------:|:----------:|:--------:|
 | dataset size |   34799  |     4410   |   12630  |
 
-The distribution of class labels indicates that the training sample is not balanced, labels like 'End of No Passing', 'Dangerous curve to the left' etc. are less than 250.
-
+Distribution of classes indicates that the training sample is not balanced, classes like 'End of No Passing', 'Dangerous curve to the left' etc. are very few, which are less than 250. I also show images of traffic sign for each classes, and find that the contrast and exposure of some images are very low. 
 <img src="./pictures/numClasses.png" alt="alt text" width="400" height="300">
-
-The following plot shows 43 traffic signs, the contract and exposure of some images are very low.
-
 <img src="./pictures/traffic_signs_original.png" alt="alt text" width="750" height="950">
 
 #### Image Processing and Augmentation
+In order to improve contrast, I pre-process the image using the following steps
+
 - Convert RGB image to gray scale: Y = 0.299 R + 0.587 G + 0.114 B
 - Apply local contrast enhancement using `skimage.exposure.equalize_adapthist`
 - Normalize the image by image / 255
-
 <img src="./pictures/preprocessed_sign.png" alt="alt text" width="500" height="250">
 ImageDataGenerator of keras is used to generate batches of augmented tensor image in training. The images are 
 
@@ -73,3 +70,4 @@ Valid loss: 0.02809283, accuracy = 0.99%
 
 Test loss: 0.09074351, accuracy = 0.98%
 ```
+#### Test a Model on New Images
