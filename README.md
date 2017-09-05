@@ -66,5 +66,5 @@ The following plots show some false predictions, my model is easily to falsely p
 <img src="./pictures/false_predict_images.png" alt="alt text" width="550" height="300">
 
 #### Test a Model on New Images
-<img src="./pictures/new_traffic_signs.png" alt="alt text" width="500" height="60">
+<img src="./pictures/new_traffic_signs.png" alt="alt text" width="1000" height="200">
 Top k prediction:
