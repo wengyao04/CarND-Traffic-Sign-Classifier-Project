@@ -18,5 +18,11 @@
 - Apply local contrast enhancement using `skimage.exposure.equalize_adapthist`
 - Normalize the image by image / 255
 
-<img src="./pictures/preprocessed_sign.png" alt="alt text" width="400" height="200">
+<img src="./pictures/preprocessed_sign.png" alt="alt text" width="500" height="250">
+ImageDataGenerator of keras is used to generate batches of augmented tensor image in training. The images are 
 
+ - randomly rotated with +/- 20deg range
+ - randomly shifted in the x and y direction with +/- 6 pixels (20% of the image size)
+ - randomly zoomed with a factor ranging from 0.8 to 1.2
+ - randomly sheared within +/- 0.5 rad
+<img src="./pictures/augumented_images.png" alt="alt text" width="500" height="250">
