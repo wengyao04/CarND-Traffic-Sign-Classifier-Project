@@ -64,4 +64,5 @@ epoch = 100
 
 earlying stopping patience = 30
 `
-<img src="./pictures/loss_accuracy.png" alt="alt text" width="500" height="250">
+
+<img src="./pictures/loss_accuracy.png" alt="alt text" width="600" height="350">
