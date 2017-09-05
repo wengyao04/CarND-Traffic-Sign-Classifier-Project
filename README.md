@@ -10,9 +10,14 @@
 | ------------ |:--------:|:----------:|:--------:|
 | dataset size |   34799  |     4410   |   12630  |
 
-The distribution of class labels indicates that the training sample is not balanced, labels like 'End of No Passing', 'Dangerous curve to the left' etc. are less than 250.
+The distribution of class labels indicates that the training sample is not balanced,
+
+labels like 'End of No Passing', 'Dangerous curve to the left' etc. are less than 250.
+
 <img src="./pictures/numClasses.png" alt="alt text" width="400" height="300">
+
 The following plot shows 43 traffic signs, the contract and exposure of some images are very low.
+
 <img src="./pictures/traffic_signs_original.png" alt="alt text" width="750" height="950">
 
 #### Image Processing and Augmentation
