@@ -46,14 +46,8 @@ I use 4 convoluted layers with 64, 128, 256 and 512 filters respectively, and ea
 |  full connect | 43         |             |         |                  |
 
 #### Model Training
-The prediction is transformed into a probability distribution using softmax:
-
-`softmax_i = exp(y_i) / sum (exp_i) `
- 
-The cross entropy between the predicted probability distribution (y’) and the actual vector score probability distribution (y) is
-`cross entropy = - sum (y'_i * log(softmax_i))`
-
-I minimize the cross entropy using AdamOptimizer with the following parameters, L2 regularization is addded which improve the accuracy by 0.5%.
+The prediction is transformed into a probability distribution using softmax `softmax_i = exp(y_i) / sum (exp_i) `
+. The cross entropy between the predicted probability distribution (y’) and the actual vector score probability distribution (y) is `cross entropy = - sum (y'_i * log(softmax_i))`. I minimize the cross entropy using AdamOptimizer with the following parameters, L2 regularization is addded which improve the accuracy by 0.5%.
 
 ``` 
 batch size = 512
