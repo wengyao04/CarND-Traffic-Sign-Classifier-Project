@@ -70,7 +70,7 @@ I use the model to predict the following traffic sign images (downloaded from we
 <img src="./pictures/new_traffic_signs.png" alt="alt text" width="3000" height="150">
 Top k prediction: k = 5
 
-My model predicts Road work, Yield, Children crossing, 50 km/h Speed Limit and Stop sign correctly with a high probability of the correct classification. However it predicts Roundabout Mandatory wrong. It categorized it as Priority road with probability of 0.9895 since the Roundabout Mandatory sign I chose has the same shape and color as Priority Road. It indicates that my model has a better recognition of shape and color than the patterns/words on the traffic signs.
+My model predicts Road work, Yield, Children crossing, 50 km/h Speed Limit and Stop sign correctly with a high probability of the correct class. However it predicts Roundabout Mandatory wrong. The accuracy of predicting 6 new images is about 83.3%. The model categorizes Roundabout Mandatory as Priority road with probability of 0.9895 since the Roundabout Mandatory sign I chose has the same shape and color as Priority Road in the traning dataset. It indicates that my model has a better recognition of shape and color than the patterns/words on the traffic signs.
 
 Roundabout mandatory                    |  Road work
 :-------------------------:|:-------------------------:
@@ -99,3 +99,4 @@ Speed limit (60km/h): 2.27998207265e-05     | End of speed limit (80km/h): 3.203
 Speed limit (100km/h): 4.26735091708e-08    | Speed limit (120km/h): 6.89647525779e-24
 ![](./pictures/SpeedLimit50.png)  |  ![](./pictures/Stop.png)
 
+#### Visualize the Neural Network's State with Test Images
