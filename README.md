@@ -68,8 +68,17 @@ The following plots show some false predictions, my model is easily to falsely p
 #### Test a Model on New Images
 I use the model to predict the following traffic sign images (downloaded from website)
 <img src="./pictures/new_traffic_signs.png" alt="alt text" width="1000" height="200">
-Top k prediction:
+Top k prediction: k = 5
 
-Yield             |  Stop
+Roundabout mandatory             |  Road work
 :-------------------------:|:-------------------------:
-![](./pictures/Yield.png)  |  ![](./pictures/Stop.png)
+![](./pictures/RoundaboutMandatory.png)  |  ![](./pictures/RoadWork.png)
+
+Yield    |  Children crossing
+:-------------------------:|:-------------------------:
+![](./pictures/Yield.png)  |  ![](./pictures/ChildrenCrossing.png)
+
+Speed Limit 50 km/h    | Stop
+:-------------------------:|:-------------------------:
+![](./pictures/SpeedLimit50.png)  |  ![](./pictures/Stop.png)
+
