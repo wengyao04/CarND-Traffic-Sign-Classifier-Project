@@ -67,18 +67,33 @@ The following plots show some false predictions, my model is easily to falsely p
 
 #### Test a Model on New Images
 I use the model to predict the following traffic sign images (downloaded from website)
-<img src="./pictures/new_traffic_signs.png" alt="alt text" width="1000" height="200">
+<img src="./pictures/new_traffic_signs.png" alt="alt text" width="3000" height="150">
 Top k prediction: k = 5
 
-Roundabout mandatory             |  Road work
+Roundabout mandatory                    |  Road work
 :-------------------------:|:-------------------------:
+Priority road: 0.989575088024           |  Road work: 1.0
+Yield: 0.00529247801751                 |  Bicycles crossing: 2.66110934964e-14
+Stop: 0.00103384349495                  |  Slippery road: 6.43749910353e-16
+Ahead only: 0.00102106039412            |  Bumpy road: 5.41721721362e-16
+Roundabout mandatory: 0.000658783596009 |  Dangerous curve to the right: 2.68919394991e-17
 ![](./pictures/RoundaboutMandatory.png)  |  ![](./pictures/RoadWork.png)
 
-Yield    |  Children crossing
+Yield                                                    |  Children crossing
 :-------------------------:|:-------------------------:
+Yield: 1.0                                               |  Children crossing: 1.0
+Priority road: 3.73760499957e-19                         |  Bicycles crossing: 1.64836304328e-11
+End of all speed and passing limits: 1.00851527998e-24   |  Speed limit (120km/h): 1.59387172243e-14
+End of no passing: 9.3484531167e-29                      |  Roundabout mandatory: 8.3265854403e-15
+General caution: 9.06802387418e-29                       |  Stop: 1.98137692912e-15
 ![](./pictures/Yield.png)  |  ![](./pictures/ChildrenCrossing.png)
 
 Speed Limit 50 km/h    | Stop
 :-------------------------:|:-------------------------:
+Speed limit (50km/h): 0.999192535877        | Stop: 1.0
+Speed limit (30km/h): 0.000553100195248     | Keep left: 2.70686010118e-21
+Speed limit (80km/h): 0.00023143949511      | Priority road: 3.03382878477e-22
+Speed limit (60km/h): 2.27998207265e-05     | End of speed limit (80km/h): 3.20343129193e-23
+Speed limit (100km/h): 4.26735091708e-08    | Speed limit (120km/h): 6.89647525779e-24
 ![](./pictures/SpeedLimit50.png)  |  ![](./pictures/Stop.png)
 
