@@ -70,6 +70,8 @@ I use the model to predict the following traffic sign images (downloaded from we
 <img src="./pictures/new_traffic_signs.png" alt="alt text" width="3000" height="150">
 Top k prediction: k = 5
 
+My model predicts Road work, Yield, Children crossing, 50 km/h Speed Limit and Stop sign correctly with a high probability in the correct classification. However it predicts Roundabout Mandatory wrong, it categorized it as Priority road with probability of 0.9895. The Roundabout Mandatory sign I chose has the same shape and color as Priority Road. 
+
 Roundabout mandatory                    |  Road work
 :-------------------------:|:-------------------------:
 Priority road: 0.989575088024           |  Road work: 1.0
