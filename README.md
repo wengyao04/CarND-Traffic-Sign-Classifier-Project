@@ -99,4 +99,8 @@ Speed limit (60km/h): 2.27998207265e-05     | End of speed limit (80km/h): 3.203
 Speed limit (100km/h): 4.26735091708e-08    | Speed limit (120km/h): 6.89647525779e-24
 ![](./pictures/SpeedLimit50.png)  |  ![](./pictures/Stop.png)
 
-#### Visualize the Neural Network's State with Test Images
+#### Visualize the Neural Network's State with Test Images (Optional)
+<img src="traffic_signs/054.jpg" alt="alt text" width="250">
+
+output of Conv2D layer 1
+![](pictures/roundabout_conv1.png)
